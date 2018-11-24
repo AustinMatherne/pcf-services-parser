@@ -1,0 +1,31 @@
+{
+  "name": "pcf-services-parser",
+  "version": "0.0.1",
+  "description": "A parser for PCF service credentials",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AustinMatherne/pcf-services-parser.git"
+  },
+  "keywords": [
+    "PCF",
+    "VCAP",
+    "Services",
+    "Credentials",
+    "ENV",
+    "Parser"
+  ],
+  "author": {
+    "name": "Austin Matherne",
+    "email": "AustinMatherne@ProtonMail.ch",
+    "url": "https://github.com/AustinMatherne"
+  },
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/AustinMatherne/pcf-services-parser/issues"
+  },
+  "homepage": "https://github.com/AustinMatherne/pcf-services-parser#readme"
+}
