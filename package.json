@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "A parser for PCF service credentials",
   "main": "dist/index.js",
+  "engines": {
+    "node": ">=0.8.0"
+  },
   "scripts": {
     "test": "jest"
   },
