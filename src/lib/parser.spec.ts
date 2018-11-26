@@ -1,6 +1,7 @@
 import * as cfenv from "cfenv";
+import { mocked } from "ts-jest/utils";
 import { getPcfServiceCredentials } from "./parser";
-const mockCfenv: jest.Mocked<typeof cfenv> = require.requireMock("cfenv");
+const mockCfenv = mocked(cfenv, true);
 jest.mock("cfenv");
 
 describe("getPcfServiceCredentials", () => {
