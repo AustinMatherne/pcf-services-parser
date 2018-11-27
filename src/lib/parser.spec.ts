@@ -134,6 +134,6 @@ describe("getPcfServiceCredentials", () => {
       SERVICE_NESTED_UNDEFINED: undefined
     };
     const result = getPcfServiceCredentials();
-    expect(result).toEqual(expectedResults);
+    expect(result).not.toEqual(expectedResults);
   });
 });
