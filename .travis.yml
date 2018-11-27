@@ -22,4 +22,3 @@ deploy:
   on:
     tags: true
     node: "10"
-    repo: AustinMatherne/pcf-services-parser
