@@ -10,23 +10,15 @@ matrix:
   allow_failures:
     - node_js: "11"
   fast_finish: true
-jobs:
-  include:
-    - stage: lint, test, and build
-      name: lint
-      script: npm run lint
-      name: test
-      script: npm test
-      name: build
-      script: npm run build
-    - stage: publish
-      script: true
-      deploy:
-        provider: npm
-        email: "$NPM_EMAIL"
-        api_key: "$NPM_API_KEY"
-        skip_cleanup: true
-        on:
-          tags: true
-          repo: AustinMatherne/pcf-services-parser
-          node: "10"
+script:
+  - yarn lint
+  - yarn test --ci
+  - yarn build
+deploy:
+  provider: npm
+  email: "$NPM_EMAIL"
+  api_key: "$NPM_API_KEY"
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: AustinMatherne/pcf-services-parser
