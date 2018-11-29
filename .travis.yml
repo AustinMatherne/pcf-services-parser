@@ -6,11 +6,14 @@ node_js:
   - "11"
   - "10"
   - "8"
+install: yarn
 script:
   - commitlint-travis
   - yarn lint
   - yarn test --ci
   - yarn build
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: npm
   email: $NPM_EMAIL
