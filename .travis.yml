@@ -2,6 +2,9 @@ os: linux
 dist: xenial
 cache: yarn
 language: node_js
+addons:
+  sonarcloud:
+    organization: "austinmatherne-github"
 node_js:
   - "11"
   - "10"
@@ -9,13 +12,14 @@ node_js:
 install: yarn install --frozen-lockfile
 script:
   - commitlint-travis
-  - yarn lint
   - yarn test --ci
+  - yarn lint --format json --out ./coverage/tslint-report.json
   - yarn build
 after_success:
   - bash <(curl -s https://codecov.io/bash)
   - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
   - cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage"
+  - sonar-scanner
 deploy:
   provider: npm
   email: $NPM_EMAIL
