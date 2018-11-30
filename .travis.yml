@@ -6,7 +6,7 @@ node_js:
   - "11"
   - "10"
   - "8"
-install: yarn
+install: yarn install --frozen-lockfile
 script:
   - commitlint-travis
   - yarn lint
@@ -14,7 +14,8 @@ script:
   - yarn build
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - cat coverage/lcov.info | ./node_modules/.bin/coveralls
+  - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
+  - cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage"
 deploy:
   provider: npm
   email: $NPM_EMAIL
