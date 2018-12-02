@@ -1,0 +1,17 @@
+version: "2"
+plugins:
+  editorconfig:
+    enabled: true
+  markdownlint:
+    enabled: true
+  nodesecurity:
+    enabled: true
+  stylelint:
+    enabled: true
+  tslint:
+    enabled: true
+exclude_patterns:
+  - "dist/"
+  - "**/node_modules/"
+  - "**/*.d.ts"
+  - "**/*.spec.ts"
