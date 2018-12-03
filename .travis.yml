@@ -9,13 +9,16 @@ node_js:
   - "11"
   - "10"
   - "8"
+branches:
+  only:
+    - master
 install: yarn install --frozen-lockfile
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
-  - commitlint-travis
+  - yarn commitlint-travis
   - yarn test --ci
   - yarn lint --format json --out ./coverage/tslint-report.json
   - yarn build
@@ -23,11 +26,9 @@ after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 after_success:
   - sonar-scanner
-deploy:
-  provider: npm
-  email: $NPM_EMAIL
-  api_key: $NPM_API_KEY
-  skip_cleanup: true
-  on:
-    tags: true
-    node: "11"
+jobs:
+  include:
+    - stage: release
+      deploy:
+        provider: script
+        script: yarn release

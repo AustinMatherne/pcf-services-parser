@@ -10,7 +10,8 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
-    "preversion": "npm run lint && npm test && npm run run build",
+    "prepublishOnly": "npm run build",
+    "release": "echo released",
     "test": "jest",
     "test:watch": "jest --watch"
   },
@@ -73,6 +74,7 @@
     "jest-sonar-reporter": "2.0.0",
     "precise-commits": "1.0.2",
     "prettier": "1.15.2",
+    "standard-version": "4.4.0",
     "ts-jest": "23.10.5",
     "ts-node": "7.0.1",
     "tslib": "1.9.3",
