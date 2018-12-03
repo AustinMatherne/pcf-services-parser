@@ -11,7 +11,7 @@
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
     "prepublishOnly": "npm run build",
-    "release": "semantic-release --dry-run",
+    "release": "semantic-release",
     "test": "jest",
     "test:watch": "jest --watch"
   },
