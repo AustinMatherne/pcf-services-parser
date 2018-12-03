@@ -6,6 +6,5 @@ module.exports = {
   testEnvironment: "node",
   collectCoverage: true,
   restoreMocks: true,
-  moduleNameMapper: pathsToModuleNameMapper(tsPaths, { prefix: "<rootDir>/" }),
-  testResultsProcessor: "jest-sonar-reporter"
+  moduleNameMapper: pathsToModuleNameMapper(tsPaths, { prefix: "<rootDir>/" })
 };
