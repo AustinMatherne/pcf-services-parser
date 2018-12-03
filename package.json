@@ -1,6 +1,6 @@
 {
   "name": "pcf-services-parser",
-  "version": "1.0.3",
+  "version": "0.0.0",
   "description": "A parser for PCF service credentials",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -11,7 +11,7 @@
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
     "prepublishOnly": "npm run build",
-    "release": "echo released",
+    "release": "semantic-release --dry-run",
     "test": "jest",
     "test:watch": "jest --watch"
   },
@@ -69,6 +69,7 @@
     "jest": "23.6.0",
     "precise-commits": "1.0.2",
     "prettier": "1.15.2",
+    "semantic-release": "15.12.3",
     "ts-jest": "23.10.5",
     "ts-node": "7.0.1",
     "tslib": "1.9.3",
