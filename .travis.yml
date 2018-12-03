@@ -17,7 +17,7 @@ jobs:
   include:
     - stage: test
       env:
-        - secure: XRcX1BEmCajmOCaVarOoLiRAG7g1DeiRkVh0tzcbhaqdVKr3fQ7wf3lkuiPOFzvnpHaGKK1UsVIkUdm5Fu0oiALhkfDzYrNeKkS4ber1gPu0wJIpbCCRQVeSIN0s6Tl0I+WUJzQk0Oppk+OGEeW1GOsl6zRKLgQIKROKiDGGB7j21uA2Hal4nGvTx2FUC6DiScK+/4Jb0lDjEeg6s7Iv1WOwUhSejUJ6qcnaByeOX46ifIJ7OjcVNizZviIDS8vZZ9eAQLMNuqwVjQEp7OMmR+IbFiF6ZfVzOupCO2ed52gj/9HiVw+V/pkvxfWMhtdf2MW64bxm522j9biW58NUawWDUljXlUkLHPyAjHx08lUIHPr1QR+kywSNs7UOWWWkaJXH/zxJ7020NLNoJqSiWEh82fZdtE6hS2Pq0ODGuYKQDFxG3Xy9Qk+iz9VvuQnuGFqijLoQ1ap9z8hEVbIVDfixYFRB/M+IwhzgFIV4Rds4uuPwlR9zvdwif+XDTyv6JcAcox0N0FW+vcQOfsi/DK6/U/FvDZTOZrirUBrpekNTfqhIj+K80c8wUJGf0/8FJE2IxjsYGDIcdOA5Vr+jHNzUL2gOfZmaZnrejihmsrMX75PEglu0ITftUoEFWnWBOi2nW2NQjqegEDO1jpSjAwnyUxBqNIQ6k62BhibH8ao=
+        CC_TEST_REPORTER_ID: ea95d56d9bf6bc9b6e406a1b031b322fc74b90b0537d31c3cd98e4fed6061936
       before_script:
         - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
         - chmod +x ./cc-test-reporter
