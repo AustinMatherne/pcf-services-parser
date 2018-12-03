@@ -4,9 +4,6 @@ cache: yarn
 language: node_js
 node_js:
   - "11"
-addons:
-  sonarcloud:
-    organization: "austinmatherne-github"
 branches:
   only:
     - master
@@ -14,7 +11,7 @@ install: yarn install --frozen-lockfile
 script:
   - yarn commitlint-travis
   - yarn test --ci
-  - yarn lint --format json --out ./coverage/tslint-report.json
+  - yarn lint
   - yarn build
 jobs:
   include:
@@ -25,8 +22,6 @@ jobs:
         - ./cc-test-reporter before-build
       after_script:
         - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-      after_success:
-        - sonar-scanner
     - stage: test
       node_js: "10"
     - stage: test
