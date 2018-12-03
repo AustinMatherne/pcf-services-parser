@@ -30,6 +30,7 @@ jobs:
   include:
     - stage: release
       if: type == push
+      script: skip
       deploy:
         provider: script
         script: yarn release
