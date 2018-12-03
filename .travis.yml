@@ -24,7 +24,7 @@ after_script:
 after_success:
   - bash <(curl -s https://codecov.io/bash)
   - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
-  - cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage"
+  - cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage
   - sonar-scanner
 deploy:
   provider: npm
