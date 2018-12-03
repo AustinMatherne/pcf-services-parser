@@ -29,6 +29,7 @@ after_success:
 jobs:
   include:
     - stage: release
+      if: type == push
       deploy:
         provider: script
         script: yarn release
