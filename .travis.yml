@@ -2,32 +2,35 @@ os: linux
 dist: xenial
 cache: yarn
 language: node_js
+node_js:
+  - "11"
 addons:
   sonarcloud:
     organization: "austinmatherne-github"
-node_js:
-  - "11"
-  - "10"
-  - "8"
 branches:
   only:
     - master
 install: yarn install --frozen-lockfile
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
 script:
   - yarn commitlint-travis
   - yarn test --ci
   - yarn lint --format json --out ./coverage/tslint-report.json
   - yarn build
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-after_success:
-  - sonar-scanner
 jobs:
   include:
+    - stage: test
+      before_script:
+        - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+        - chmod +x ./cc-test-reporter
+        - ./cc-test-reporter before-build
+      after_script:
+        - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+      after_success:
+        - sonar-scanner
+    - stage: test
+      node_js: "10"
+    - stage: test
+      node_js: "8"
     - stage: release
       if: type == push
       script: skip
