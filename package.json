@@ -11,7 +11,7 @@
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
     "prepublishOnly": "npm run build",
-    "release": "ls -lah && ls -lah ./node_modules && ls -lah ./node_modules/.bin",
+    "release": "semantic-release --dry-run",
     "test": "jest",
     "test:watch": "jest --watch"
   },
