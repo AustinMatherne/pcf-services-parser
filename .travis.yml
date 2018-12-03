@@ -9,6 +9,9 @@ node_js:
   - "11"
   - "10"
   - "8"
+branches:
+  only:
+    - master
 install: yarn install --frozen-lockfile
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -23,11 +26,9 @@ after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 after_success:
   - sonar-scanner
-
 jobs:
   include:
     - stage: release
-      if: branch = master
       deploy:
         provider: script
         script: yarn release
