@@ -15,5 +15,6 @@
     "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {}
-  }
+  },
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
