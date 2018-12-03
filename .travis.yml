@@ -31,10 +31,10 @@ jobs:
     - stage: release
       if: type == push
       script: skip
-      skip_cleanup: true
       env:
         - secure: rP1cFzA51vZdBMVjUdnB+DkqUpS5FdUnCL2HCbhU3LI561gyzSI8Rkf+4YFS4t19p1v57umcGLqX15e65xwbHEEVa3d1pW393gzj7FaXgWOLp7un/AGGvBrxTMmJXQO3uloagZPDozLWVUB5M3C8ke2SXgcv+anjdfyxW1D++qU7haFQCYJPOjb0Lgxgme8W9w4SAO4coRd5PM7Srec94WT/IDOXf6GmeL2jcW+Dmk9kqmx//7qPx8MIQR3EOiVbcle3MIdVVt1jk3paBmBCnb9ij7I6WkWl2/rbfdkP1BHwxImdYT8t58mA6IhcLPof6JKSN6taYHJoYG1SCesX19ud2QSSNYg2/dEUF9ZoquE61zMaagSvTPsba15Itue1xpQ56qmx4G9V73T/4j2l0Q6TQx7D1/+YokUz0THCjkzWsDaL0DnEYt2r3XY/CkywX9eCTCDwfVqfG0T1rsq3In0Ps/4RcR/jCx46N519Zu1sBO8bwTFDQ/cdVyBEk3IkSWlh0ZkfUXytjsVkOAWSzC3/Rzu+4upJg2s4OTEhb9XhT4QabtTFAQI4oQKzt3kMv6Z3yTjVmPKOX07GKZ+NwyjXoYJuZJMIFcaXfvHEYTjmsqXR1utwnBYGEwKdjD/XOxVRFip4PmXnWxjolsjvh28lJGhNscjy5TSoY9QYz0Y=
         - secure: s66Mq5j2hG4qh7MbXhe+yqKsRuPIwIsWnyfwgy2rjYHendMSffKLYQtlJfioyqGpo9TJQTfcoldinyOBYRr6ZCO5u3LI7WA16z3MXIsUMA4Uphuzu94MJJWgSrNkhZUpYkMnE0SwqCU+kutNK3ozqOSLmPPyxFWmL2XUycZsvKeJwaEh+0JeZQI5AubvAe/fvQTT7FLjs2+VNUY+4FnrNCBvOTIrVZ6ys7DbmYiavfOihFQDYaaF8oCRsQPO6I/kasbNgHQIk8HOtxNcuR7XjOhwjNcXbjNwQpStYkuhrM8t9x4XBQVb5/7UoDKPlI6Ae5Y2KGJG1/5g8NSbZBsshWeTseT6C8opkY3/DKPkPEgsKdwSP7Hb308Tdiq+QzQxCr54mTC+Uh4aY3fF9Wd1c25yqav3GCkVjfTrHtQ2ByajtXWpoX2r+TiNj5BRNSld8JwPlJ/h+hA+2NXKScf4KckdqwlJibGEwBEtegQql7A7/YEy0vFAioCEwtv5ZvfE6u1UiPqKa2RhVyOZapmkpc5dgpf4J2W8jmF1teb+ktWRj/dYu6a6mR0h4EEZMaFhxKskixHDvViv9ML0Ci+t3oVgzbQAu/vC4eK12Bw0/HXJBO+prkOO1FvXfuCKsE+KXQ7gWZOezrHsxFZFhiecbPCYaiVi7azxwp6xC3wDKiU=
       deploy:
         provider: script
+        skip_cleanup: true
         script: yarn release
