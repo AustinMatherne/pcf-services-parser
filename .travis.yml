@@ -10,8 +10,8 @@ branches:
 install: yarn install --frozen-lockfile
 script:
   - yarn commitlint-travis
-  - yarn test --ci
   - yarn lint
+  - yarn test --ci
   - yarn build
 jobs:
   include:
