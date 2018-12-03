@@ -10,7 +10,8 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
-    "preversion": "npm run lint && npm test && npm run run build",
+    "prepublishOnly": "npm run build",
+    "release": "echo released",
     "test": "jest",
     "test:watch": "jest --watch"
   },
