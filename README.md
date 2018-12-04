@@ -6,7 +6,7 @@
 
 [![Travis (.com)](https://img.shields.io/travis/com/AustinMatherne/pcf-services-parser.svg)](https://travis-ci.com/AustinMatherne/pcf-services-parser/)
 [![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/AustinMatherne/pcf-services-parser.svg)](https://codeclimate.com/github/AustinMatherne/pcf-services-parser)
-[![Code Climate coverage](https://img.shields.io/codeclimate/coverage/AustinMatherne/pcf-services-parser.svg)](https://codeclimate.com/github/AustinMatherne/pcf-services-parser)
+[![Code Climate coverage](https://img.shields.io/codeclimate/coverage/AustinMatherne/pcf-services-parser.svg)](https://codeclimate.com/github/AustinMatherne/pcf-services-parser) [![Greenkeeper badge](https://badges.greenkeeper.io/AustinMatherne/pcf-services-parser.svg)](https://greenkeeper.io/)
 
 A parser for PCF service credentials
 
