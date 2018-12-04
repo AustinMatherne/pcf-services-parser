@@ -80,3 +80,16 @@ typings/
 .fusebox/
 
 # End of https://www.gitignore.io/api/node
+
+### Custom ###
+.codeclimate.yml
+.editorconfig
+.gitattributes
+.nvmrc
+.releaserc.yml
+.travis.yml
+CODE_OF_CONDUCT.md
+jest.config.js
+tsconfig.json
+tslint.json
+**/*.spec.ts
