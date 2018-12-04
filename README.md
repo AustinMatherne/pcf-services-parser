@@ -8,6 +8,8 @@
 [![Travis (.com)](https://img.shields.io/travis/com/AustinMatherne/pcf-services-parser.svg)](https://travis-ci.com/AustinMatherne/pcf-services-parser/)
 [![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/AustinMatherne/pcf-services-parser.svg)](https://codeclimate.com/github/AustinMatherne/pcf-services-parser)
 [![Code Climate coverage](https://img.shields.io/codeclimate/coverage/AustinMatherne/pcf-services-parser.svg)](https://codeclimate.com/github/AustinMatherne/pcf-services-parser)
+[![LGTM Alerts](https://img.shields.io/lgtm/alerts/g/AustinMatherne/pcf-services-parser.svg)](https://lgtm.com/projects/g/AustinMatherne/pcf-services-parser/overview/)
+[![GitHub issues](https://img.shields.io/github/issues/AustinMatherne/pcf-services-parser.svg)](https://github.com/AustinMatherne/pcf-services-parser/issues)
 
 A parser for PCF service credentials
 
@@ -41,8 +43,9 @@ Given the service configuration:
 ```
 
 ```typescript
-const serviceCredentials = getPcfServiceCredentials();
-console.log(serviceCredentials);
+import { getPcfServiceCredentials } from "pcf-services-parser";
+
+getPcfServiceCredentials();
 // {
 //   DB_SERVICE_USERNAME: "db-username",
 //   DB_SERVICE_PASSWORD: "db-password",
