@@ -3,16 +3,11 @@ name: Feature Request
 about: Suggest an idea for this project
 ---
 
-<!--
-Have you read the Code of Conduct?
-By filing an Issue, you are expected to comply with it,
-including treating everyone with respect.
--->
-
 # Feature Request
 
 ## Prerequisites
 
+- [ ] Have read and agree to the project Code of Conduct
 - [ ] Checked that your feature hasn't already been requested.
 
 ## Summary

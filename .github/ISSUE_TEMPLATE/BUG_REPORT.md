@@ -3,16 +3,11 @@ name: Bug Report
 about: Create a report to help us improve
 ---
 
-<!--
-Have you read the Code of Conduct?
-By filing an Issue, you are expected to comply with it,
-including treating everyone with respect.
--->
-
 # Bug Report
 
 ## Prerequisites
 
+- [ ] Have read and agree to the project Code of Conduct
 - [ ] Checked that your issue isn't already filed.
 
 ## Versions
