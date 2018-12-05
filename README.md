@@ -11,8 +11,6 @@
 [![LGTM Alerts](https://img.shields.io/lgtm/alerts/g/AustinMatherne/pcf-services-parser.svg)](https://lgtm.com/projects/g/AustinMatherne/pcf-services-parser/overview/)
 [![GitHub issues](https://img.shields.io/github/issues/AustinMatherne/pcf-services-parser.svg)](https://github.com/AustinMatherne/pcf-services-parser/issues)
 
-A parser for PCF service credentials
-
 Returns PCF service credentials as an object of ENV formatted strings.
 
 Given the service configuration:
