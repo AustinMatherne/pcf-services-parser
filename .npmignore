@@ -85,11 +85,14 @@ typings/
 .codeclimate.yml
 .editorconfig
 .gitattributes
+.github/
 .nvmrc
 .releaserc.yml
 .travis.yml
 CODE_OF_CONDUCT.md
+CONTRIBUTING.md
 jest.config.js
+stryker.conf.js
 tsconfig.json
 tslint.json
 **/*.spec.ts
