@@ -156,12 +156,14 @@ yarn lint
 ### Test
 
 This repository uses [Jest](https://github.com/facebook/jest) for writing and
-running tests.
+running tests and [Stryker](https://github.com/stryker-mutator/stryker) for
+mutation testing.
 
 Before pushing your code changes make sure all **tests pass**:
 
 ```bash
 yarn test
+yarn test:mutations
 ```
 
 During development you can run tests in watch mode. Optionally filtering tests

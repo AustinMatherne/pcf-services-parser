@@ -13,12 +13,14 @@ script:
   - yarn commitlint-travis
   - yarn lint
   - yarn test --ci
+  - yarn test:mutations
   - yarn build
 jobs:
   include:
     - stage: test
       env:
-        CC_TEST_REPORTER_ID: ea95d56d9bf6bc9b6e406a1b031b322fc74b90b0537d31c3cd98e4fed6061936
+        - CC_TEST_REPORTER_ID: ea95d56d9bf6bc9b6e406a1b031b322fc74b90b0537d31c3cd98e4fed6061936
+        - secure: CUSaHIJq4ARTdB0n/gz+q3W5wQgtqUMlGjmCauZpbNaNbviU5qipoOaPNrTZbMF50c4+4F7K34n2AxyokRhXgzrG1zefbRaUtb3cfO2BY6Af3WQIGSOjHvTUdgoAzdcxOl7oSmnR3biFPsXIE6NcMm3i7tdMsDc5vT/ZsTkrliBcH3KI9TQ62r0WYOD1Nmnpow7S6KIlAyIz8bDsh8wzQ1mo8O8iyfRwFjcYrvanhZcgbodQtQfpIcs82HhaoKv3XecntlHagesSlJBVv/lWuNEB1DNYCmF+pjEeK4BhyjwzYv/dPW0lsmbCZIKttLtIAOU5JEfNEAyFzdjBsvWyviVN8Ra2TfacIJRFdws60/eGr2KfQHZc/r28RawHveEkJ9v9PsShwg7pGEpI3SF04o1/IHKzUlrxB+wBlbkaQLVqwO1hlXnt2XCvhRjNN25K/aklVaGGaU3szGSLiZpR+EWeRj15E2tpLbB8+q2DPdTpGsdKtOCEhP+vnDHwBi1Sb7pIyP/Fq84Qyd4qLnPGw5vBUlPNKvEauAJRG/FgWmqbSbtntI1rW7h6/dzEMMf/X4/BX3lO9ssH588SoYFrvTO7mFubf14peNjZCyw5vRGvE1fsD/d8Oeo3OH4iJlS4fv1Hivcjlhet6pUAQX7/52lcbibG1nZ/kX/aeWvQ8S8=
       before_script:
         - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
         - chmod +x ./cc-test-reporter

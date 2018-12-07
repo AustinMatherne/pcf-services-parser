@@ -13,6 +13,7 @@
     "prepublishOnly": "npm run build",
     "release": "semantic-release",
     "test": "jest",
+    "test:mutations": "stryker run",
     "test:watch": "jest --watch"
   },
   "husky": {
@@ -70,6 +71,10 @@
     "precise-commits": "1.0.2",
     "prettier": "1.15.3",
     "semantic-release": "15.12.4",
+    "stryker": "0.33.1",
+    "stryker-api": "0.22.0",
+    "stryker-jest-runner": "1.2.9",
+    "stryker-typescript": "0.16.1",
     "ts-jest": "23.10.5",
     "ts-node": "7.0.1",
     "tslib": "1.9.3",
