@@ -6672,10 +6672,10 @@ stryker-api@0.22.0:
   dependencies:
     tslib "~1.9.3"
 
-stryker-jest-runner@1.2.9:
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/stryker-jest-runner/-/stryker-jest-runner-1.2.9.tgz#e2ec22def5f260e1b444356d96f8f9ab4e4ce41e"
-  integrity sha512-DN8gqSmm6hI0b44sx6HTo+wgKjRhm93DLpLkRt4SrZLEb42+BEq4wBQR7hyPB47UuQ9c5Oi/oL54LCrw0f1vjw==
+stryker-jest-runner@1.2.10:
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/stryker-jest-runner/-/stryker-jest-runner-1.2.10.tgz#2376f8e829ad577fe70eff6c44aa3a495e561a40"
+  integrity sha512-Zy6N6f7/Ggy2feQQ1NMJAcGipyv07Kw2WbWGwAr/aYlyGJGNgUrbp7zo06Ivh/YOEVZwqcneaeQfgLVfpouhXA==
   dependencies:
     semver "~5.6.0"
 
