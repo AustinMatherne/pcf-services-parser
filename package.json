@@ -73,7 +73,7 @@
     "semantic-release": "15.12.5",
     "stryker": "0.33.1",
     "stryker-api": "0.22.0",
-    "stryker-jest-runner": "1.2.9",
+    "stryker-jest-runner": "1.2.10",
     "stryker-typescript": "0.16.1",
     "ts-jest": "23.10.5",
     "ts-node": "7.0.1",
