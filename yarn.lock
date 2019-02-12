@@ -373,10 +373,10 @@
   resolved "https://registry.yarnpkg.com/@stryker-mutator/util/-/util-0.0.3.tgz#097c069a3c795449e170d9ded7da7e139bf41a7d"
   integrity sha512-vOvh7DHw2qbPsoYYddjVN3merk38ZkNIH6TBErNi0SXtCBxoViBppXHtcSdG5NBnT/mwjNhSC5dv8jDznkHk7w==
 
-"@types/jest@23.3.11":
-  version "23.3.11"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.11.tgz#d3a936ae753d9e484965f5cbd19027c2b8af2551"
-  integrity sha512-eroF85PoG87XjCwzxey7yBsQNkIY/TV5myKKSG/022A0FW25afdu/uub6JDMS5eT68zBBt82S+w/MFOTjeLM3Q==
+"@types/jest@24.0.3":
+  version "24.0.3"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.3.tgz#df8dc56565bd2d27fcbd099434f04f9891e16ab7"
+  integrity sha512-keRxrIwZZ/Ml83cGl3G0OjGlBO4UFQCCa5QlBPz2pY+ZvSnoeUvMJw0vmL4JU6g4vbpIW5H4qSq1xv9h8naAfg==
 
 "@types/lodash@4.14.119":
   version "4.14.119"
