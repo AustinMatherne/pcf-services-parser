@@ -55,7 +55,7 @@
   },
   "homepage": "https://github.com/AustinMatherne/pcf-services-parser#readme",
   "dependencies": {
-    "cfenv": "1.1.0",
+    "cfenv": "1.2.2",
     "lodash": "4.17.11"
   },
   "devDependencies": {
